@@ -41,11 +41,14 @@ unsetopt correct_all
 # Customize to your needs...
 export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/Applications/Sublime Text 2.app/Contents/SharedSupport/bin:/Users/gil/.rbenv/bin:/Users/gil/.lein/bin:/Users/gil/.ec2/bin'
 
+alias gti=git
+
+export PGHOST='/var/pgsql_socket'
 
 lbl() {
 
   export FB_APP_ID=503902466297249
-  export FB_APP_SECRET=2a9bf1e28ba3598f4f4215a451af5cba2
+  export FB_APP_SECRET=2a9bf1e28ba3598f4f4215a451af5cb2
   export BSD_API_SECRET='b1a9a225ba982cfc89204dac286c5821bad60544'
   export BSD_API_ID='lbl'
   export BSD_HOST='http://oaktree.bsdtoolsdemo.com'
@@ -53,11 +56,12 @@ lbl() {
   export S3_BUCKET=livebelowthelineau
   export S3_KEY=AKIAJOWV3U4ELSYMLGYA
   export S3_SECRET=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
-  export PATH=$PATH:./bin
+  export PATH=./bin:$PATH
 
+  export CAMPAIGN_START=01/07/2011
   alias psqlstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-
-
+  alias be='bundle exec'
+  alias gti='git'
   cd ~/work/lbl/lblau
 }
 
