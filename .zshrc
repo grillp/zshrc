@@ -44,7 +44,7 @@ export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/loca
 alias gti=git
 
 export PGHOST='/var/pgsql_socket'
-
+export EDITOR=`which vim`
 lbl() {
 
   export FB_APP_ID=503902466297249
