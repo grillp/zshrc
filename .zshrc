@@ -62,9 +62,11 @@ lbl() {
 
   export CAMPAIGN_START=01/07/2011
   alias psqlstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-  alias be='bundle exec'
-  alias gti='git'
   cd ~/work/lbl/lblau
+}
+
+rea() {
+  cd ~/work/rea/consumer-domain
 }
 
 eval "$(rbenv init -)"
