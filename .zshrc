@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 #ZSH_THEME="muse"
 
 # Example aliases
@@ -36,12 +37,13 @@ ZSH_THEME="robbyrussell"
 plugins=(git homebrew)
 
 source $ZSH/oh-my-zsh.sh
-unsetopt correct_all
+unsetopt correct
 
 # Customize to your needs...
 export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/git/bin:/Applications/Sublime Text 2.app/Contents/SharedSupport/bin:/Users/gil/.rbenv/bin:/Users/gil/.lein/bin:/Users/gil/.ec2/bin'
 
 alias gti=git
+alias be='bundle exec'
 
 export PGHOST='/var/pgsql_socket'
 export EDITOR=`which vim`
